@@ -7,7 +7,7 @@ namespace netCore
         static void Main(string[] args)
         {
             //CALCULADORA
-
+            /*
             int suma;
             int resta;
             int multiplicacion;
@@ -46,7 +46,7 @@ namespace netCore
             }
 
             Console.ReadLine();
-
+            */
             //********************************************************************************************************************************************
 
             /*
@@ -60,33 +60,28 @@ namespace netCore
              *  != diferente o igual a
              *  && y
              *  || o
-             
+             */
 
             int valor1 = 9;
             int valor2 = 8;
-            int valor3 = 10;
-            int valor4 = 10;
+            string name;
             var data = valor1 != valor2;
 
-            if (valor1!=valor2 && valor3==valor4)
-            {
-                if (valor1<valor4)
-                {
-                    Console.WriteLine("Entrando al segundo if");
-                    Console.WriteLine("El valor de DATA es: true ");
-                }
-                else
-                {
-                    Console.WriteLine("Entrando al else anidado");
-                }           
-            }
-            else
-            {
-                Console.WriteLine("El valor de DATA es: false");
-            }
+            //if (data)
+            //{
+            //    name = "Alex";
+            //}
+            //else
+            //{
+            //    name = "Joel";
+            //}
+
+            name = data ? "Alex" : "Joel";
+
+            Console.WriteLine("Resultado " + name);
 
             Console.ReadLine();
-            */
+            
         }
     }
 }
