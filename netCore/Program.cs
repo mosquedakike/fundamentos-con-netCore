@@ -23,27 +23,52 @@ namespace netCore
             Console.WriteLine("Selecciona alguna de las siguientes opciones:\n\nSumar: 1\nRestar: 2\nMultiplicar: 3\nDividir: 4\n");
             option = Convert.ToInt16(Console.ReadLine());
 
+            switch(option)
+            {
+                case 1:
+                    suma = a + b;
+                    Console.WriteLine("El resultado de a + b es: " + suma);
+                    break;
+                case 2:
+                    resta = a - b;
+                    Console.WriteLine("El resultado de a - b es: " + resta);
+                    break;
+                case 3:
+                    multiplicacion = a * b;
+                    Console.WriteLine("El resultado de a * b es: " + multiplicacion);
+                    break;
+                case 4:
+                    division = a / b;
+                    Console.WriteLine("El resultado de a / b es: " + division);
+                    break;
+            }
 
-            if (option == 1)
-            {
-                suma = a + b;
-                Console.WriteLine("El resultado de a + b es: " + suma);
-            }
-            if (option == 2)
-            {
-                resta = a - b;
-                Console.WriteLine("El resultado de a - b es: " + resta);
-            }
-            if (option == 3)
-            {
-                multiplicacion = a * b;
-                Console.WriteLine("El resultado de a * b es: " + multiplicacion);
-            }
-            if (option == 4)
-            {
-                division = a / b;
-                Console.WriteLine("El resultado de a / b es: " + division);
-            }
+            //if (option == 1)
+            //{
+            //    suma = a + b;
+            //    Console.WriteLine("El resultado de a + b es: " + suma);
+            //}
+            //if (option == 2)
+            //{
+            //    resta = a - b;
+            //    Console.WriteLine("El resultado de a - b es: " + resta);
+            //}
+            //if (option == 3)
+            //{
+            //    multiplicacion = a * b;
+            //    Console.WriteLine("El resultado de a * b es: " + multiplicacion);
+            //}
+            //if (option == 4)
+            //{
+            //    division = a / b;
+            //    Console.WriteLine("El resultado de a / b es: " + division);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("NO ES UNA OPCION VALIDA");
+            //}
+
+
 
             Console.ReadLine();
             */
