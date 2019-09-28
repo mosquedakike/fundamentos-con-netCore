@@ -85,10 +85,10 @@ namespace netCore
              *  != diferente o igual a
              *  && y
              *  || o
-             */
+             
 
             int valor1 = 9;
-            int valor2 = 8;
+            int valor2 = 9;
             string name;
             var data = valor1 != valor2;
 
@@ -101,11 +101,46 @@ namespace netCore
             //    name = "Joel";
             //}
 
+            //se valida el valor de la variable que esta del lado derecho del [?] si el valor es [true]
+            //se imprime el valor de la izquierda de los [:] si es [false] se imprime lo de la derecha
             name = data ? "Alex" : "Joel";
 
             Console.WriteLine("Resultado " + name);
+            */
+            //********************************************************************************************************************************************
 
+            //ARREGLOS
+
+            int[] numeros = new int[3];
+            string[] cadenas = new string[5];
+            
+
+            cadenas[0] = "Alex";
+            cadenas[1] = "kike";
+            cadenas[2] = "miguel";
+            cadenas[3] = "ricardo";
+            cadenas[4] = "fernando";
+
+            numeros[0] = 1;
+            Console.WriteLine(numeros[0]);
+
+            string[] carreras = {"info","industrial"};
+            Console.WriteLine(carreras[0]);
+
+            int[] array3;
+            array3 = new int[] { 1, 3, 5, 7, 9 };
+
+            Console.WriteLine(array3[4]);
+
+            for (var i=0; i < cadenas.Length; i++)
+            {
+                Console.WriteLine("En la posicion " + i +" contiene: " + cadenas[i]);
+            }
+
+
+            
             Console.ReadLine();
+
             
         }
     }
