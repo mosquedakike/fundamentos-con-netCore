@@ -7,38 +7,43 @@ namespace netCore
         static void Main(string[] args)
         {
             //CALCULADORA
-            /*
+
             int suma;
             int resta;
             int multiplicacion;
             int division;
             int option;
 
+            int[] valores = new int[2];
+
+
             Console.WriteLine("inserte el valor de a: ");
-            int a = Convert.ToInt16(Console.ReadLine());
+            valores[0] = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Inserte el valor de b: ");
-            int b = Convert.ToInt16(Console.ReadLine());
+            valores[1] = Convert.ToInt32(Console.ReadLine());
+
+
 
             Console.WriteLine("Selecciona alguna de las siguientes opciones:\n\nSumar: 1\nRestar: 2\nMultiplicar: 3\nDividir: 4\n");
             option = Convert.ToInt16(Console.ReadLine());
 
-            switch(option)
+            switch (option)
             {
                 case 1:
-                    suma = a + b;
+                    suma = valores[0] + valores[1];
                     Console.WriteLine("El resultado de a + b es: " + suma);
                     break;
                 case 2:
-                    resta = a - b;
+                    resta = valores[0] - valores[1];
                     Console.WriteLine("El resultado de a - b es: " + resta);
                     break;
                 case 3:
-                    multiplicacion = a * b;
+                    multiplicacion = valores[0] * valores[1];
                     Console.WriteLine("El resultado de a * b es: " + multiplicacion);
                     break;
                 case 4:
-                    division = a / b;
+                    division = valores[0] / valores[1];
                     Console.WriteLine("El resultado de a / b es: " + division);
                     break;
             }
@@ -71,7 +76,7 @@ namespace netCore
 
 
             Console.ReadLine();
-            */
+           
             //********************************************************************************************************************************************
 
             /*
@@ -110,11 +115,11 @@ namespace netCore
             //********************************************************************************************************************************************
 
             //ARREGLOS
-
+            /*
             int[] numeros = new int[3];
             string[] cadenas = new string[5];
             
-
+            
             cadenas[0] = "Alex";
             cadenas[1] = "kike";
             cadenas[2] = "miguel";
@@ -141,7 +146,7 @@ namespace netCore
             
             Console.ReadLine();
 
-            
+            */
         }
     }
 }
