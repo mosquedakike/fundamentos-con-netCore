@@ -122,8 +122,6 @@ namespace netCore
             Console.WriteLine(c); //100
             Console.WriteLine(d); //200
 
-<<<<<<< HEAD
-=======
             //ARRAY TRIDIMENSIONAL O MULTIDIMENSIONAL
 
             double[,,] matriz3D = new double[2,2,3] { 
@@ -154,7 +152,6 @@ namespace netCore
 
             Console.WriteLine("Valor de b: {0}");
 
->>>>>>> desarrollo
             Console.ReadLine();
 
         }
