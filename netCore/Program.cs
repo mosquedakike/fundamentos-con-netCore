@@ -113,32 +113,35 @@ namespace netCore
 
             int[] numeros = new int[3];
             string[] cadenas = new string[5];
-            
 
-            cadenas[0] = "Alex";
-            cadenas[1] = "kike";
-            cadenas[2] = "miguel";
-            cadenas[3] = "ricardo";
-            cadenas[4] = "fernando";
+            //pedir datos para el llenado del arreglo
+            for (var a=0; a<cadenas.Length; a++)
+            {
+                Console.WriteLine("Inserta el valor del arreglo en la posicion [" + a + "]");
+                cadenas[a] = Console.ReadLine();
+            }
+
+            for (var i = 0; i < cadenas.Length; i++)
+            {
+                Console.WriteLine("En la posicion " + i + " contiene: " + cadenas[i]);
+            }
+            //cadenas[1] = "kike";
+            //cadenas[2] = "miguel";
+            //cadenas[3] = "ricardo";
+            //cadenas[4] = "fernando";
 
             numeros[0] = 1;
             Console.WriteLine(numeros[0]);
 
+            //declarar arreglo e inicializarlo de tipo string
             string[] carreras = {"info","industrial"};
             Console.WriteLine(carreras[0]);
-
+            //declarar arreglo e inicializarlo de tipo int
             int[] array3;
             array3 = new int[] { 1, 3, 5, 7, 9 };
 
             Console.WriteLine(array3[4]);
 
-            for (var i=0; i < cadenas.Length; i++)
-            {
-                Console.WriteLine("En la posicion " + i +" contiene: " + cadenas[i]);
-            }
-
-
-            
             Console.ReadLine();
 
             
