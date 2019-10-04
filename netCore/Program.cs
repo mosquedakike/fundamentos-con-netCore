@@ -152,24 +152,25 @@ namespace netCore
              * El foreach te permite recorrer una serie de datos por ejemplo de un array 
              * de principio a fin almacenando cada valor del arreglo en el objeto item
              */
-            int[] array_number2 = new int[] { 0, 1, 2 };
+            /*
+           int[] array_number2 = new int[] { 0, 1, 2 };
 
-            for (int i = 0; i < array_number2.Length; i++)
-            {
-                Console.WriteLine("Array con for: " + array_number2[i]);
-            }
+           for (int i = 0; i < array_number2.Length; i++)
+           {
+               Console.WriteLine("Array con for: " + array_number2[i]);
+           }
 
-            int[] array_foreach = new int[3];
+           int[] array_foreach = new int[3];
 
-            array_foreach[0] = 10;
-            array_foreach[1] = 20;
-            array_foreach[2] = 30;
+           array_foreach[0] = 10;
+           array_foreach[1] = 20;
+           array_foreach[2] = 30;
 
-            foreach (var item in array_foreach)
-            {
-                Console.WriteLine("Array con foreach: " + item);
-            }
-
+           foreach (var item in array_foreach)
+           {
+               Console.WriteLine("Array con foreach: " + item);
+           }
+           */
 
 
             //********************************************************************************************************************************************
@@ -180,33 +181,68 @@ namespace netCore
             *******************************************************************
             */
 
-            //int a = 5;
-            //string a = "kike";
+            /*
+             * Switch #1
+            */
+            /*
+            int a = 5;
+            string a = "kike";
 
-            //switch (a)  
-            //{
-            //    case "jose":
-            //        Console.WriteLine("Estas en el case 1: {0}", a);
-            //        break;
-            //    case "kike":
-            //        Console.WriteLine("Este es el case de string");
-            //        break;
-            //    default:
-            //        Console.WriteLine("Este es el case default");
-            //        break;
-            //}
+            switch (a)
+            {
+                case "jose":
+                    Console.WriteLine("Estas en el case 1: {0}", a);
+                    break;
+                case "kike":
+                    Console.WriteLine("Este es el case de string");
+                    break;
+                default:
+                    Console.WriteLine("Este es el case default");
+                    break;
+            }
+            */
 
+            /*
+             * Switch #2
+             * Este tipo de switch solo funciona de la version 8 de C# en adelante
+            */
 
-            //Este tipo de switch solo funciona de la version 8 de C# en adelante
-            //var data = 2;
-            //var result = data switch
-            //{
-            //    1 => 2,
-            //    2 => 5,
-            //    3 => 10
-            //};
-            
-            //Console.WriteLine(data + " " + result);
+            /*
+            var data = 2;
+            var result = data switch
+            {
+                1 => "primero",
+                2 => "segundo",
+                3 => "tercero"
+            };
+
+            Console.WriteLine("Contenido de la variable RESULT: " + result);
+            */
+
+            /*
+             *Switch #3
+             * 
+             */
+
+            var (a, b, option) = (2, 4, "*");
+            var result = option switch
+            {
+            "+" => a+b,
+            "-" => a-b,
+            "*" => a*b
+            };
+
+            Console.WriteLine("El valor de RESULT es: {0}", result);
+
+            var (c, d, opcion) = (20, 40, "-");
+            var resultado = opcion switch
+            {
+                "+" => c == d,
+                "-" => c < d,
+                "*" => c > d
+            };
+
+            Console.WriteLine("El valor de RSTULTADO es: {0}",resultado);
 
             Console.ReadLine();
 
