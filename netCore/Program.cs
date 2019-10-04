@@ -50,31 +50,13 @@ namespace netCore
              * 
             //Arreglo de tipo string
             string[] cadenas = new string[5];
-<<<<<<< HEAD
 
-            //pedir datos para el llenado del arreglo
-            for (var a=0; a<cadenas.Length; a++)
-            {
-                Console.WriteLine("Inserta el valor del arreglo en la posicion [" + a + "]");
-                cadenas[a] = Console.ReadLine();
-            }
-
-            for (var i = 0; i < cadenas.Length; i++)
-            {
-                Console.WriteLine("En la posicion " + i + " contiene: " + cadenas[i]);
-            }
-            //cadenas[1] = "kike";
-            //cadenas[2] = "miguel";
-            //cadenas[3] = "ricardo";
-            //cadenas[4] = "fernando";
-=======
             
             cadenas[0] = "Alex";
             cadenas[1] = "kike";
             cadenas[2] = "miguel";
             cadenas[3] = "ricardo";
             cadenas[4] = "fernando";
->>>>>>> desarrollo
 
             for (var i = 0; i < cadenas.Length; i++)
             {
@@ -87,11 +69,8 @@ namespace netCore
             numeros[0] = 1;
             Console.WriteLine(numeros[0]);
 
-<<<<<<< HEAD
-            //declarar arreglo e inicializarlo de tipo string
-=======
             //Arreglo de tipo string sin definir la longitud
->>>>>>> desarrollo
+
             string[] carreras = {"info","industrial"};
             Console.WriteLine(carreras[0]);
             //declarar arreglo e inicializarlo de tipo int
@@ -109,8 +88,8 @@ namespace netCore
              * PARA LAS CORDENAS EL 1° ES EL VALOR DE LA FILA Y EL 2° ES EL VALOR DE LA COLUMNA
              */
 
-            int[,] matriz = new int[2,2] { { 10,20 },
-                                           {100,200} };
+            int[,] matriz = { { 10,20 },
+                              {100,200} };
 
             int a = matriz[0,0];
             int b = matriz[0,1];
@@ -124,7 +103,7 @@ namespace netCore
 
             //ARRAY TRIDIMENSIONAL O MULTIDIMENSIONAL
 
-            double[,,] matriz3D = new double[2,2,3] { 
+            double[,,] matriz3D = { 
                                                     { {3.0,6.9,8.9},{6.8,4.5,7.6} }, 
                                                     { {6.0,6.8,2.9},{3.8,4.5,10.6} } 
                                                     };
@@ -132,7 +111,7 @@ namespace netCore
             Console.WriteLine(matriz3D[0,0,2]);
 
 
-            string[,,] words = new string[2, 2, 3] { 
+            string[,,] words = { 
                                                     { {"a","b","c"},{"d","e","f"} },
                                                     { {"g","h","i"},{"j","k","l"} }
                                                     };
@@ -150,7 +129,7 @@ namespace netCore
                 Console.WriteLine("Contenido del array words " + item);
             }
 
-            Console.WriteLine("Valor de b: {0}");
+            Console.WriteLine("Valor de b: {0}", b);
 
             Console.ReadLine();
 
