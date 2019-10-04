@@ -92,11 +92,11 @@ namespace netCore
 
             //********************************************************************************************************************************************
 
-           /*
-           *******************************************************************
-           *       ARREGLOS BIBIMENSIONALES Y MULTIDIMENSIONALES             * 
-           *******************************************************************
-           */
+            /*
+            *******************************************************************
+            *       ARREGLOS BIBIMENSIONALES Y MULTIDIMENSIONALES             * 
+            *******************************************************************
+            */
 
             /*
              * ARREGLOS BIDIMENSIONALES
@@ -151,25 +151,39 @@ namespace netCore
 
             //********************************************************************************************************************************************
 
-            //SWITCH
+           /*
+           *******************************************************************
+           *                          SWITCH                                 * 
+           *******************************************************************
+           */
 
             //int a = 5;
-            string a = "kike";
+            //string a = "kike";
 
-            switch (a)
+            //switch (a)  
+            //{
+            //    case "jose":
+            //        Console.WriteLine("Estas en el case 1: {0}", a);
+            //        break;
+            //    case "kike":
+            //        Console.WriteLine("Este es el case de string");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Este es el case default");
+            //        break;
+            //}
+
+
+            //Este tipo de switch solo funciona de la version 8 de C# en adelante
+            var data = 2;
+            var result = data switch
             {
-                case "jose":
-                    Console.WriteLine("Estas en el case 1: {0}", a);
-                    break;
-                case "kike":
-                    Console.WriteLine("Este es el case de string");
-                    break;
-                default:
-                    Console.WriteLine("Este es el case default");
-                    break;
-            }
-
-            Console.WriteLine("Valor de b: {0}", b);
+                1 => 2,
+                2 => 5,
+                3 => 10
+            };
+            
+            Console.WriteLine(data + " " + result);
 
             Console.ReadLine();
 
