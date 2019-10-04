@@ -59,7 +59,6 @@ namespace netCore
               
             //Arreglo de tipo string
             string[] cadenas = new string[5];
-<<<<<<< HEAD
 
             //pedir datos para el llenado del arreglo
             for (var a=0; a<cadenas.Length; a++)
@@ -72,18 +71,10 @@ namespace netCore
             {
                 Console.WriteLine("En la posicion " + i + " contiene: " + cadenas[i]);
             }
-            //cadenas[1] = "kike";
-            //cadenas[2] = "miguel";
-            //cadenas[3] = "ricardo";
-            //cadenas[4] = "fernando";
-=======
-            
-            cadenas[0] = "Alex";
             cadenas[1] = "kike";
             cadenas[2] = "miguel";
             cadenas[3] = "ricardo";
             cadenas[4] = "fernando";
->>>>>>> desarrollo
 
             for (var i = 0; i < cadenas.Length; i++)
             {
@@ -96,11 +87,9 @@ namespace netCore
             numeros[0] = 1;
             Console.WriteLine(numeros[0]);
 
-<<<<<<< HEAD
-            //declarar arreglo e inicializarlo de tipo string
-=======
+
             //Arreglo de tipo string sin definir la longitud
->>>>>>> desarrollo
+
             string[] carreras = {"info","industrial"};
             Console.WriteLine(carreras[0]);
             //declarar arreglo e inicializarlo de tipo int
