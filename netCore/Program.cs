@@ -142,16 +142,35 @@ namespace netCore
 
            Console.WriteLine("**********************************************************************");
 
-           /*
-            * El foreach te permite recorrer una serie de datos por ejemplo de un array 
-            * de principio a fin almacenando cada valor del arreglo en el objeto item
+             /*
+            *******************************************************************
+            *                         FOR Y FOREACH                           * 
+            *******************************************************************
             */
+
             /*
-           foreach (var item in words)
-           {
-               Console.WriteLine("Contenido del array words " + item);
-           }
-           */
+             * El foreach te permite recorrer una serie de datos por ejemplo de un array 
+             * de principio a fin almacenando cada valor del arreglo en el objeto item
+             */
+            int[] array_number2 = new int[] { 0, 1, 2 };
+
+            for (int i = 0; i < array_number2.Length; i++)
+            {
+                Console.WriteLine("Array con for: " + array_number2[i]);
+            }
+
+            int[] array_foreach = new int[3];
+
+            array_foreach[0] = 10;
+            array_foreach[1] = 20;
+            array_foreach[2] = 30;
+
+            foreach (var item in array_foreach)
+            {
+                Console.WriteLine("Array con foreach: " + item);
+            }
+
+
 
             //********************************************************************************************************************************************
 
@@ -179,15 +198,15 @@ namespace netCore
 
 
             //Este tipo de switch solo funciona de la version 8 de C# en adelante
-            var data = 2;
-            var result = data switch
-            {
-                1 => 2,
-                2 => 5,
-                3 => 10
-            };
+            //var data = 2;
+            //var result = data switch
+            //{
+            //    1 => 2,
+            //    2 => 5,
+            //    3 => 10
+            //};
             
-            Console.WriteLine(data + " " + result);
+            //Console.WriteLine(data + " " + result);
 
             Console.ReadLine();
 
