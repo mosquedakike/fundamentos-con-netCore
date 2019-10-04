@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 
 namespace netCore
 {
@@ -9,6 +8,11 @@ namespace netCore
         {
 
             //********************************************************************************************************************************************
+            /*
+            *******************************************************************
+            *                           OPERADORES                            *
+            *******************************************************************
+            */
 
             /*
              * TIPOS DE OPERADORES:
@@ -46,8 +50,13 @@ namespace netCore
             //********************************************************************************************************************************************
 
             /*
-             * ARREGLOS
-             * 
+           *******************************************************************
+           *                           ARREGLOS                              *
+           *******************************************************************
+           */
+
+            /* ARREGLOS
+              
             //Arreglo de tipo string
             string[] cadenas = new string[5];
 <<<<<<< HEAD
@@ -99,8 +108,17 @@ namespace netCore
             array3 = new int[] { 1, 3, 5, 7, 9 };
 
             Console.WriteLine(array3[4]);
+
+            Console.ReadLine();
             */
+
             //********************************************************************************************************************************************
+
+           /*
+           *******************************************************************
+           *       ARREGLOS BIBIMENSIONALES Y MULTIDIMENSIONALES             * 
+           *******************************************************************
+           */
 
             /*
              * ARREGLOS BIDIMENSIONALES
@@ -108,49 +126,69 @@ namespace netCore
              * LOS VALORES DE LOS SEGUNDOS PARENTESIS SON LAS FILAS
              * PARA LAS CORDENAS EL 1° ES EL VALOR DE LA FILA Y EL 2° ES EL VALOR DE LA COLUMNA
              */
-
-            int[,] matriz = new int[2,2] { { 10,20 },
-                                           {100,200} };
-
-            int a = matriz[0,0];
-            int b = matriz[0,1];
-            int c = matriz[1,0];
-            int d = matriz[1,1];
-
-            Console.WriteLine(a); //10
-            Console.WriteLine(b); //20
-            Console.WriteLine(c); //100
-            Console.WriteLine(d); //200
-
-            //ARRAY TRIDIMENSIONAL O MULTIDIMENSIONAL
-
-            double[,,] matriz3D = new double[2,2,3] { 
-                                                    { {3.0,6.9,8.9},{6.8,4.5,7.6} }, 
-                                                    { {6.0,6.8,2.9},{3.8,4.5,10.6} } 
-                                                    };
-
-            Console.WriteLine(matriz3D[0,0,2]);
-
-
-            string[,,] words = new string[2, 2, 3] { 
-                                                    { {"a","b","c"},{"d","e","f"} },
-                                                    { {"g","h","i"},{"j","k","l"} }
-                                                    };
-
-            Console.WriteLine("matriz de string: " + words[1, 1, 1]);
-
-            Console.WriteLine("**********************************************************************");
-
             /*
-             * El foreach te permite recorrer una serie de datos por ejemplo de un array 
-             * de principio a fin almacenando cada valor del arreglo en el objeto item
-             */
-            foreach (var item in words)
-            {
-                Console.WriteLine("Contenido del array words " + item);
-            }
+           int[,] matriz = new int[2, 2] { { 10,20 },
+                                          {100,200} };
 
-            Console.WriteLine("Valor de b: {0}");
+           int a = matriz[0, 0];
+           int b = matriz[0, 1];
+           int c = matriz[1, 0];
+           int d = matriz[1, 1];
+
+           Console.WriteLine(a); //10
+           Console.WriteLine(b); //20
+           Console.WriteLine(c); //100
+           Console.WriteLine(d); //200
+
+           //ARRAY TRIDIMENSIONAL O MULTIDIMENSIONAL
+
+           double[,,] matriz3D = new double[2, 2, 3] {
+                                                   { {3.0,6.9,8.9},{6.8,4.5,7.6} },
+                                                   { {6.0,6.8,2.9},{3.8,4.5,10.6} }
+                                                   };
+
+           Console.WriteLine(matriz3D[0, 0, 2]);
+
+
+           string[,,] words = new string[2, 2, 3] {
+                                                   { {"a","b","c"},{"d","e","f"} },
+                                                   { {"g","h","i"},{"j","k","l"} }
+                                                   };
+
+           Console.WriteLine("matriz de string: " + words[1, 1, 1]);
+
+           Console.WriteLine("**********************************************************************");
+
+           /*
+            * El foreach te permite recorrer una serie de datos por ejemplo de un array 
+            * de principio a fin almacenando cada valor del arreglo en el objeto item
+            */
+            /*
+           foreach (var item in words)
+           {
+               Console.WriteLine("Contenido del array words " + item);
+           }
+           */
+
+            //********************************************************************************************************************************************
+
+            //SWITCH
+
+            //int a = 5;
+            string a = "kike";
+
+            switch (a)
+            {
+                case "jose":
+                    Console.WriteLine("Estas en el case 1: {0}", a);
+                    break;
+                case "kike":
+                    Console.WriteLine("Este es el case de string");
+                    break;
+                default:
+                    Console.WriteLine("Este es el case default");
+                    break;
+            }
 
             Console.ReadLine();
 
