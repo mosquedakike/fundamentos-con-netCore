@@ -224,6 +224,7 @@ namespace netCore
              * 
              */
 
+            /*
             var (a, b, option) = (2, 4, "*");
             var result = option switch
             {
@@ -243,6 +244,35 @@ namespace netCore
             };
 
             Console.WriteLine("El valor de RSTULTADO es: {0}",resultado);
+            */
+
+            /*
+            *******************************************************************
+            *                         WHILE Y DOWHILE                         * 
+            *******************************************************************
+            */
+
+            /*
+            * El While se ejecuta infinitamente hasta que ya no cumpla la condicion que  
+            * lleva en sus parentesis
+            */
+
+            int a = 1;
+            while (a<5)
+            {
+                Console.WriteLine("El valor de a es: {0}",a);
+                a++;
+            }
+
+            Console.WriteLine("saliendo del while... ahora el valor de a es: {0}",a);
+
+            do
+            {
+                Console.WriteLine("El valor de a es: {0}",a);
+                a--;
+            } while (a>0);
+
+            Console.WriteLine("saliendo del do while... ahora el valor ed a es: {0}",a);
 
             Console.ReadLine();
 
