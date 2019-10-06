@@ -257,6 +257,7 @@ namespace netCore
             * lleva en sus parentesis
             */
 
+            /*
             int a = 1;
             while (a<5)
             {
@@ -273,6 +274,69 @@ namespace netCore
             } while (a>0);
 
             Console.WriteLine("saliendo del do while... ahora el valor ed a es: {0}",a);
+            */
+
+            /*
+            *******************************************************************
+            *                   INMUTABILIDAD DE STRINGS                      * 
+            *******************************************************************
+            */
+
+            /*
+            string name1 = "kike";
+            string name2 = "miguel";
+            string name3 = name1;
+            name1 += name2;
+
+            Console.WriteLine("El valor de name1 es: {0}", name1);
+            Console.WriteLine("El valor de name3, contiene name1 y es: {0}", name3);
+            */
+
+            /*
+            *
+            *******************************************************************
+            *               FORMATEAR CADENAS DE TIPO STRING                  * 
+            *******************************************************************
+            */
+
+            //INTERPOLACION DE DE CADENAS
+
+            var nombres = (name1: "kike", number: 25, name2: "miguel");
+
+            Console.WriteLine("{0} {1} {2}", $"{nombres.name1}", $"{nombres.name2}", $"{nombres.number}");
+
+            var numeros = (first: 1, second: 2);
+
+            Console.WriteLine(numeros.first);
+
+
+            //Substring
+            var message = "Hello World";
+
+            Console.WriteLine(message);
+            Console.WriteLine(message.Substring(0,3));
+            var remplazar = message.Replace("World", "Mexico");
+            Console.WriteLine(remplazar);
+
+            /*
+            * [ToCharArray] sirve para convertir una cadena en una array
+            * [ToLower] sirve para convertir el texto en minusculas
+            * [ToUpper] sirve para convertir el texto en mayusculas
+            */
+
+            var data = message.ToCharArray();
+            Console.WriteLine(data[6]);
+
+            var minusculas = message.ToLower();
+            var mayusculas = message.ToUpper();
+            Console.WriteLine(mayusculas);
+            Console.WriteLine(minusculas);
+
+            foreach (var item in message)
+            {
+                Console.WriteLine("Imprime la cadena de texto por posicion: {0}",item);
+            }
+
 
             Console.ReadLine();
 
