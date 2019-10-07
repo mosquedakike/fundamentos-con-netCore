@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace netCore
 {
@@ -253,7 +254,7 @@ namespace netCore
             */
 
             /*
-            * El While se ejecuta infinitamente hasta que ya no cumpla la condicion que  
+            * [While] se ejecuta infinitamente hasta que ya no cumpla la condicion que  
             * lleva en sus parentesis
             */
 
@@ -301,6 +302,7 @@ namespace netCore
 
             //INTERPOLACION DE DE CADENAS
 
+            /*
             var nombres = (name1: "kike", number: 25, name2: "miguel");
 
             Console.WriteLine("{0} {1} {2}", $"{nombres.name1}", $"{nombres.name2}", $"{nombres.number}");
@@ -317,13 +319,14 @@ namespace netCore
             Console.WriteLine(message.Substring(0,3));
             var remplazar = message.Replace("World", "Mexico");
             Console.WriteLine(remplazar);
+            */
 
             /*
             * [ToCharArray] sirve para convertir una cadena en una array
             * [ToLower] sirve para convertir el texto en minusculas
             * [ToUpper] sirve para convertir el texto en mayusculas
             */
-
+            /*
             var data = message.ToCharArray();
             Console.WriteLine(data[6]);
 
@@ -336,10 +339,35 @@ namespace netCore
             {
                 Console.WriteLine("Imprime la cadena de texto por posicion: {0}",item);
             }
+            */
 
+            /*
+            *
+            *******************************************************************
+            *                         STRINGBUILDER                           * 
+            *******************************************************************
+            */
+
+            /*
+             * [StringBuilder] sirve para poder modificar un string ya que por
+             *  default en C# no se permite hacer modificaciones a las cadenas.
+             */
+
+            //Esto no esta permitido
+            //string cadenas = "soy un string";
+            //cadenas[0] = 'S';
+            //Console.WriteLine(cadenas);
+
+            //Esta seria la forma correcta de modificar una cadena
+            var names = new StringBuilder("Hello World");
+            names[0] = 'h';
+            Console.WriteLine(names.ToString());
+
+            names.Append(" in C#");
+            
+            Console.WriteLine(names.ToString());
 
             Console.ReadLine();
-
         }
     }
 }
