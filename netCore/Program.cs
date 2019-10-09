@@ -363,7 +363,9 @@ namespace netCore
             names[0] = 'h';
             Console.WriteLine(names.ToString());
 
-            names.Append(" in C#");
+            names.Append(" in C#").Append(" este es un curso increible");
+            names.AppendLine();
+            names.AppendFormat("Edad: {0}",25);
             
             Console.WriteLine(names.ToString());
 
